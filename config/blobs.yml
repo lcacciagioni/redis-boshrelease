@@ -1,1 +1,6 @@
---- {}
+---
+redis/redis-2.8.8.tar.gz:
+  object_id: d56dd60a-1852-4388-8342-19a13445da9a
+  sha: !binary |-
+    YWE4MTFmMzk5ZGI1OGM5MmM4ZWM1ZTQ4MjcxZDMwN2U5YWI4ZWI4MQ==
+  size: 1073450

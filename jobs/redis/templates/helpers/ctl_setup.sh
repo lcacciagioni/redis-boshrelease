@@ -36,10 +36,10 @@ do
 done
 
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH:-''} # default to empty
-for package_bin_dir in $(ls -d /var/vcap/packages/*/lib)
-do
-  export LD_LIBRARY_PATH=${package_bin_dir}:$LD_LIBRARY_PATH
-done
+#for package_bin_dir in $(ls -d /var/vcap/packages/*/lib)
+#do
+#  export LD_LIBRARY_PATH=${package_bin_dir}:$LD_LIBRARY_PATH
+#done
 
 # Setup log, run and tmp folders
 
@@ -71,10 +71,10 @@ fi
 
 # setup CLASSPATH for all jars/ folders within packages
 export CLASSPATH=${CLASSPATH:-''} # default to empty
-for java_jar in $(ls -d /var/vcap/packages/*/*/*.jar)
-do
-  export CLASSPATH=${java_jar}:$CLASSPATH
-done
+#for java_jar in $(ls -d /var/vcap/packages/*/*/*.jar)
+#do
+#  export CLASSPATH=${java_jar}:$CLASSPATH
+#done
 
 PIDFILE=$RUN_DIR/$JOB_NAME.pid
 
