@@ -1,12 +1,14 @@
 # BOSH Release for redis
 
+This release has been enerated with [bosh-gen](https://github.com/cloudfoundry-community/bosh-gen).
+
 ## Usage
 
 To use this bosh release, first upload it to your bosh:
 
 ```
 bosh target BOSH_HOST
-git clone https://github.com/cloudfoundry-community/redis-boshrelease.git
+git clone https://github.com/lcacciagioni/redis-boshrelease.git
 cd redis-boshrelease
 bosh upload release releases/redis-1.yml
 ```
